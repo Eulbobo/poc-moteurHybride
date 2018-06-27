@@ -22,7 +22,7 @@ public class Application {
         Map<String, JarExec> beans = applicationContext.getBeansOfType(JarExec.class);
         
         for (Entry<String, JarExec> entry : beans.entrySet()) {
-            LOGGER.info("Bean : {} / {}", entry.getKey(), entry.getValue());
+            LOGGER.info("Bean : {} / {} : {}", entry.getKey(), entry.getValue(), entry.getValue().calculRemun(null));
         }
 
     }
